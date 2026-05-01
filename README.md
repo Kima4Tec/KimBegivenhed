@@ -1,7 +1,6 @@
-## Flowchart
-
 ```mermaid
 flowchart TD
+
 A[App starter - MainActivity] --> B[Opret eventList]
 B --> C[Vis RecyclerView]
 
@@ -15,7 +14,7 @@ G --> H[Bruger interaktion]
 H -->|Klik på Details| I[Start DetailsActivity]
 I --> J[Modtag data via Intent]
 J --> K[Vis billede, navn, dato, beskrivelse]
-K --> L[Klik 'Åbn browser']
+K --> L[Klik Åbn browser]
 L --> M[Åbn URL i browser]
 
 H -->|Klik på Tilmeld| N[Vis AlertDialog]
