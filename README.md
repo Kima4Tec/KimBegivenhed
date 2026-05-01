@@ -36,7 +36,7 @@ W --> Q
 
 
 
-<img width="400" height="845" alt="Forside" src="https://github.com/user-attachments/assets/a33a4335-e99e-487e-98db-55fa677b9bd4" />
+<img width="387" height="832" alt="Forside" src="https://github.com/user-attachments/assets/b0d18a8b-8c75-49b2-8448-53fe4ffd1374" />
 
 <img width="398" height="837" alt="Detaljeside" src="https://github.com/user-attachments/assets/5d5adb06-c5cb-44d9-bf36-179816b95711" />
 
