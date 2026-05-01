@@ -1,3 +1,36 @@
+flowchart TD
+
+A[App starter - MainActivity] --> B[Opret eventList]
+B --> C[Vis RecyclerView]
+
+C --> D[EventAdapter]
+D --> E[onCreateViewHolder]
+D --> F[onBindViewHolder]
+F --> G[Vis navn og dato]
+
+G --> H[Bruger interaktion]
+
+H -->|Klik på Details| I[Start DetailsActivity]
+I --> J[Modtag data via Intent]
+J --> K[Vis billede, navn, dato, beskrivelse]
+K --> L[Klik 'Åbn browser']
+L --> M[Åbn URL i browser]
+
+H -->|Klik på Tilmeld| N[Vis AlertDialog]
+N --> O[Vis Toast: Tilmeldt]
+
+H -->|Søg| P[filterEvents()]
+P --> Q[Opdater filteredList]
+Q --> R[notifyDataSetChanged]
+R --> C
+
+H -->|Tilføj event| S[Start AddEventActivity]
+S --> T[Bruger indtaster data + vælger dato]
+T --> U[Send data tilbage med setResult]
+U --> V[Modtag via ActivityResultLauncher]
+V --> W[Tilføj til eventList]
+W --> Q
+
 <img width="400" height="845" alt="Forside" src="https://github.com/user-attachments/assets/a33a4335-e99e-487e-98db-55fa677b9bd4" />
 
 <img width="398" height="837" alt="Detaljeside" src="https://github.com/user-attachments/assets/5d5adb06-c5cb-44d9-bf36-179816b95711" />
