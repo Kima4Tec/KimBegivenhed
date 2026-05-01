@@ -1,5 +1,7 @@
-flowchart TD
+## Flowchart
 
+```mermaid
+flowchart TD
 A[App starter - MainActivity] --> B[Opret eventList]
 B --> C[Vis RecyclerView]
 
@@ -30,6 +32,10 @@ T --> U[Send data tilbage med setResult]
 U --> V[Modtag via ActivityResultLauncher]
 V --> W[Tilføj til eventList]
 W --> Q
+```
+
+
+
 
 <img width="400" height="845" alt="Forside" src="https://github.com/user-attachments/assets/a33a4335-e99e-487e-98db-55fa677b9bd4" />
 
