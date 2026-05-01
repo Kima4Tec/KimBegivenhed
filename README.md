@@ -1,35 +1,35 @@
 ```mermaid
 flowchart TD
 
-A[App starter - MainActivity] --> B[Opret eventList]
+A[App starter - MainActivity] --> B[Opret event liste]
 B --> C[Vis RecyclerView]
 
 C --> D[EventAdapter]
-D --> E[onCreateViewHolder]
-D --> F[onBindViewHolder]
+D --> E[Create ViewHolder]
+D --> F[Bind data til view]
 F --> G[Vis navn og dato]
 
 G --> H[Bruger interaktion]
 
-H -->|Klik på Details| I[Start DetailsActivity]
-I --> J[Modtag data via Intent]
-J --> K[Vis billede, navn, dato, beskrivelse]
+H -->|Klik Details| I[Start DetailsActivity]
+I --> J[Modtag Intent data]
+J --> K[Vis event detaljer]
 K --> L[Klik Åbn browser]
 L --> M[Åbn URL i browser]
 
-H -->|Klik på Tilmeld| N[Vis AlertDialog]
-N --> O[Vis Toast: Tilmeldt]
+H -->|Klik Tilmeld| N[Vis dialog]
+N --> O[Vis Toast besked]
 
-H -->|Søg| P[filterEvents()]
-P --> Q[Opdater filteredList]
+H -->|Søg| P[filter events]
+P --> Q[Opdater filtered list]
 Q --> R[notifyDataSetChanged]
 R --> C
 
 H -->|Tilføj event| S[Start AddEventActivity]
-S --> T[Bruger indtaster data + vælger dato]
-T --> U[Send data tilbage med setResult]
+S --> T[Indtast data + vælg dato]
+T --> U[Returner data med setResult]
 U --> V[Modtag via ActivityResultLauncher]
-V --> W[Tilføj til eventList]
+V --> W[Tilføj til liste]
 W --> Q
 ```
 
