@@ -26,9 +26,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSave"
-        android:text="Gem event"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Gem event"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/success_green"
+        android:layout_marginTop="16dp"
+        style="@style/Widget.MaterialComponents.Button" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEvBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Annullér"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/warning_red"
+        android:layout_marginTop="12dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
 </LinearLayout>

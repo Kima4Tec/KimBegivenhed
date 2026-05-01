@@ -18,11 +18,15 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
     private List<Event> events;
     private Context context;
 
+//    Constructor til EventAdapter
+//    Modtager listen af events og context (bruges til intents, dialogs osv.)
     public EventAdapter(List<Event> events, Context context) {
         this.events = events;
         this.context = context;
     }
 
+    // ViewHolder holder referencer til UI-elementerne i ét item i RecyclerView
+    // Bruger ViewBinding istedet for findViewById
     public static class ViewHolder extends RecyclerView.ViewHolder {
         ItemEventBinding binding;
 
@@ -31,7 +35,8 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
             this.binding = binding;
         }
     }
-
+    // Opretter en ny ViewHolder når RecyclerView har brug for en ny række
+    // Inflater item layoutet (item_event.xml)
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         ItemEventBinding binding = ItemEventBinding.inflate(

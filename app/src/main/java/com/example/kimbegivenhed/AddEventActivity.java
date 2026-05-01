@@ -25,6 +25,7 @@ public class AddEventActivity extends AppCompatActivity {
 
         // DatePicker
         binding.etDate.setOnClickListener(v -> showDatePicker());
+        binding.btnEvBack.setOnClickListener(v -> finish());
 
         // Gem event og returnér til MainActivity
         binding.btnSave.setOnClickListener(v -> {
@@ -63,4 +64,6 @@ public class AddEventActivity extends AppCompatActivity {
 
         picker.show(getSupportFragmentManager(), "DATE_PICKER");
     }
+
+
 }

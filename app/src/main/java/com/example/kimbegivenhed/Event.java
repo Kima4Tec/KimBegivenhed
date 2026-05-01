@@ -7,7 +7,7 @@ public class Event {
     private String description;
     private String url;
 
-    // Opretter et Event-objekt med billede, navn, dato, beskrivelse og URL
+    // Konstruktor: Opretter et Event-objekt med billede, navn, dato, beskrivelse og URL
     public Event(int imageResId, String name, String date, String description, String url) {
         this.imageResId = imageResId;
         this.name = name;
