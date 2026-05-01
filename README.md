@@ -40,7 +40,7 @@ W --> Q
 
 <img width="398" height="837" alt="Detaljeside" src="https://github.com/user-attachments/assets/5d5adb06-c5cb-44d9-bf36-179816b95711" />
 
-<img width="398" height="833" alt="EventOpret" src="https://github.com/user-attachments/assets/1c2bb641-d72e-4e5a-b900-bd223aea97a8" />
+<img width="400" height="834" alt="Skærmbillede 2026-05-01 143502" src="https://github.com/user-attachments/assets/5801ca32-c230-48c3-935c-66abf106ecbf" />
 
 <img width="393" height="842" alt="EventMedDatePicker" src="https://github.com/user-attachments/assets/4ce5835d-7e77-4133-8329-fcd3a16e9df9" />
 
